@@ -2,6 +2,8 @@
 
 ### decription : This is an API I created for a task given by hedgehog labs, I took a lot of concepts from instagram to do this API.
 
+### Development hardware: Macbook Pro 2015, Python Version = 3.9.1, Coding environment= VS code , Testing application = Postman
+
 ### additional information : This is the first time I created a REST API and I spent less than 24hrs (2 days on whole) on learning about how to create and use REST API in python from help of stackoverflow and youtube
 
 ## Consists of 4 tables: User, Images, Followers, Likes
@@ -10,7 +12,7 @@ the reason i took 4 table is for faster access and better handling of data, ther
 
 ## Setup:
 
-1. Recommended : activate virtual environment and activate virtual environment 
+1. Recommended : activate virtual environment (you can activate the same virtual environment for using)
 `source .venv/bin/activate`
 note: to deactivate virtual environment(to be done at end only) `$ deactivate`
 

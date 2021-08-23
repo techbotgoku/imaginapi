@@ -2,7 +2,7 @@
 
 ### decription : This is an API I created for a task given by hedgehog labs, I took a lot of concepts from instagram to do this API.
 
-### additional information : This is the first time I created a REST API and I spent less than 1 day on learning about how to create and use REST API in python from help of stackoverflow and youtube
+### additional information : This is the first time I created a REST API and I spent less than 24hrs (2 days on whole) on learning about how to create and use REST API in python from help of stackoverflow and youtube
 
 ## Consists of 4 tables: User, Images, Followers, Likes
 

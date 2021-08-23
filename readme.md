@@ -4,7 +4,7 @@
 
 ### Development hardware: Macbook Pro 2015, Python Version = 3.9.1, Coding environment= VS code , Testing application = Postman
 
-### additional information : This is the first time I created a REST API and I spent less than 24hrs (2 days on a whole) on learning about how to create and use REST API in python (from help of stackoverflow and youtube) and tested to see if the api runs smoothly
+### additional information : This is the first time I created a REST API and I spent less than 24hrs (2 days on a whole) on learning about how to create and use REST API in python (with the help of stackoverflow and youtube) and tested to see if the api runs smoothly
 
 ## Consists of 4 tables: User, Images, Followers, Likes
 

@@ -6,10 +6,6 @@
 
 #### additional information : This is the first time I created a REST API and I spent less than 24hrs (2 days on a whole) on learning about how to create and use REST API in python (with the help of stackoverflow and youtube) and tested to see if the api runs smoothly
 
-## Consists of 4 tables: User, Images, Followers, Likes
-
-the reason i took 4 table is for faster access and better handling of data, therefore all data is not lost when an issue arrise
-
 ## Setup:
 
 1. Recommended : activate virtual environment (you can activate the same virtual environment for using)

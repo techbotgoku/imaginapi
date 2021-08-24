@@ -1,4 +1,4 @@
-# IMAGIN REST API created by Gokul For Hedgehog Lab
+# IMAGIN REST API created by Gokul Naidu For Hedgehog Lab
 
 ### description : This is an API I created for a task given by hedgehog lab, I took a lot of concepts from instagram to do this API.
 
@@ -29,7 +29,7 @@ use this if data.db is absent and you want to create a local sqllite database
 
 ### To create user:
 
-**POST** mode, url = **<serveraddress>/user**
+**POST** Request, url = **<serveraddress>/user**
 and in Postman go to Body --> raw mode and enter the following:
 ```Json
 {
@@ -52,7 +52,7 @@ If it's a new database make sure to create an **admin** account first as admin c
 
 ### To Login :
 
-**GET** mode, url = **<serveraddress>/login**
+**GET** Request, url = **<serveraddress>/login**
 and in Postman go to Authorization --> Type = Basic Auth and enter the **Username and password**
 upon successful login you get the unique token in the body which is needed to do any task in the api,
 ```Json
@@ -71,7 +71,7 @@ Do note: make a note of this token and its valid only for  **60 minutes** after 
 
 ### To see all users in the app along with their following,followers and total posts:
 
-**GET** mode, url = **<serveraddress>/user**
+**GET** Request, url = **<serveraddress>/user**
 
 output will be in this format for normal user:
 ```Json
@@ -139,7 +139,7 @@ output for admin will also have hashed passwords of users, their public _id and 
 
 ### To view specific user profile in the app along with their following,followers and total posts and posts details(including likes):
 
-**GET** mode, url = **<serveraddress>/user/<username>**
+**GET** Request, url = **<serveraddress>/user/<username>**
 
 If the current logged in user is trying to open their profile / if admin is trying to access
 they can see hashed_password of the user along with public_id and the other details example:
@@ -192,7 +192,7 @@ other wise if a user is normally visiting other user's profle, the output will b
 ### To upload a post:
 Note: The post will be uploaded to the current loggedin user only, and not even admin can upload images to others profile
 
-**POST** mode, url = **<serveraddress>/user/post**
+**POST** Request, url = **<serveraddress>/user/post**
 
 and in Postman go to Body --> raw mode and enter the following:
 ```Json
@@ -212,7 +212,7 @@ or refer to https://stackoverflow.com/questions/40684543/how-to-make-python-use-
 ### To delete a post:
 Note: The post will be deleted from the current loggedin user only, and the public_id of the image should match with the user
 
-**DELETE** mode, url = **<serveraddress>/user/post**
+**DELETE** Request, url = **<serveraddress>/user/post**
 
 and in Postman go to Body --> raw mode and enter the following:
 ```Json
@@ -224,11 +224,11 @@ Note: if the public_id is invalid or if the public_id doesn't belong to the user
 
 ### To see all the posts of the current user:
 
-**GET** mode, url = **<serveraddress>/user/post**
+**GET** Request, url = **<serveraddress>/user/post**
 
 ### To follow a user:
 
-**PUT** mode, url = **<serveraddress>/user/<username_to_follow>/follow**
+**PUT** Request, url = **<serveraddress>/user/<username_to_follow>/follow**
 output will be 
 ```Json
 {
@@ -246,7 +246,7 @@ Note: You can only follow a user who you didn't follow yet if you try to follow 
 
 ### to Unfollow user:
 
-**DELETE** mode, url = **<serveraddress>/user/<username_to_follow>/follow**
+**DELETE** Request, url = **<serveraddress>/user/<username_to_follow>/follow**
 output will be 
 ```Json
 {
@@ -264,7 +264,7 @@ Note: You can only unfollow a user who you followed, if you try to unfollow a al
 
 ### To like post:
 Note:User can like his post and his followings posts only and once liked they can't like again until unliked 
-**POST** mode, url = **<serveraddress>/user/post/like**
+**POST** Request, url = **<serveraddress>/user/post/like**
 and in Postman go to Body --> raw mode and enter the following:
 
 ```Json
@@ -276,7 +276,7 @@ and in Postman go to Body --> raw mode and enter the following:
 ### to unlike post:
 Note:User can unlike his posts and his followings posts only and once unliked they can't unlike again until liked 
 
-**DELETE** mode, url = **<serveraddress>/user/post/like** 
+**DELETE** Request, url = **<serveraddress>/user/post/like** 
 and in Postman go to Body --> raw mode and enter the following:
 
 ```Json
@@ -287,7 +287,7 @@ and in Postman go to Body --> raw mode and enter the following:
 
 
 ### to show the recent posts of the user's following list including his posts sorted by latest first(just like instagram's feed)
-**GET** mode, url = **<serveraddress>/user/feed**
+**GET** Request, url = **<serveraddress>/user/feed**
 
 will give output in following format:
 ```Json
@@ -313,20 +313,20 @@ will give output in following format:
 
 ### to show all top posts from all users sorted by likes if no like it'll show the most recent posts after that
 
-**GET** mode, url = **<serveraddress>/user/trending**
+**GET** Request, url = **<serveraddress>/user/trending**
 
 
 ### to show the loggedin user's followers list
 
-**GET** mode, url = **<serveraddress>/user/followers**
+**GET** Request, url = **<serveraddress>/user/followers**
 
 
 ### to show the loggedin user's following list
 
-**GET** mode, url = **<serveraddress>/user/following**
+**GET** Request, url = **<serveraddress>/user/following**
 
 ### to show people who liked the post(based on image_public id)
-**GET** mode, url = **<serveraddress>/user/post/like**
+**GET** Request, url = **<serveraddress>/user/post/like**
 and in Postman go to Body --> raw mode and enter the following:
 
 ```Json
@@ -344,7 +344,7 @@ Note: admin can delete any profile and in password he/she needs to enter admin's
 
 An user can delete his profile with entering his password in the password field
 first,
-**DELETE** mode, url = **<serveraddress>/user/<user_to_be_deleted>**
+**DELETE** Request, url = **<serveraddress>/user/<user_to_be_deleted>**
 and in Postman go to Body --> raw mode and enter the following:
 
 for normal user:
@@ -362,5 +362,5 @@ for admin:
 ```
 
 ### to give admin level access to any user
-Note: Only current users wth admin level access can give new users admin level access
-**PUT** mode, url = **<serveraddress>/user/<user_to_given_access>**
+Note: Only current users with admin level access can give new users admin level access
+**PUT** Request, url = **<serveraddress>/user/<user_to_given_access>**

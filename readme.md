@@ -1,10 +1,10 @@
-# IMAGIN API created by Gokul Naidu
+# IMAGIN REST API created by Gokul For Hedgehog Lab
 
 ### description : This is an API I created for a task given by hedgehog lab, I took a lot of concepts from instagram to do this API.
 
 ### Development hardware and software: Macbook Pro 2015, Python Version = 3.9.1, Coding environment= VS code , Testing application = Postman
 
-### additional information : This is the first time I created a REST API and I spent less than 24hrs (2 days on a whole) on learning about how to create and use REST API in python (with the help of stackoverflow and youtube) and tested to see if the api runs smoothly
+#### additional information : This is the first time I created a REST API and I spent less than 24hrs (2 days on a whole) on learning about how to create and use REST API in python (with the help of stackoverflow and youtube) and tested to see if the api runs smoothly
 
 ## Consists of 4 tables: User, Images, Followers, Likes
 

@@ -63,7 +63,7 @@ upon successful login you get the unique token in the body which is needed to do
  
 Do note: make a note of this token and its valid only for  **60 minutes** after which you need to login
 
-# Important only these above tasks don't require token, while the rest need token authentication to perform the any other tasks, so to do that perform the following:
+# Important only these above tasks don't require token, while the rest need token authentication to perform any other tasks, so to do that perform the following:
 
 ## In postman go to Headers and then add a new key termed:
  `x-access-token`  and value is `<token_value_displayed>`, the token which was displayed on successfull login

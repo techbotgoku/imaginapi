@@ -1,6 +1,6 @@
-# IMAGIN REST API created by Gokul Naidu For Hedgehog Lab
+# IMAGIN REST API created by Gokul Naidu
 
-### description : This is an API I created for a task given by hedgehog lab, I took a lot of concepts from instagram to do this API.
+### description : This is an API created inspired by various concepts of instagram.
 
 ### Development hardware and software: Macbook Pro 2015, Python Version = 3.9.1, Coding environment= VS code , Testing application = Postman
 

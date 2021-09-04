@@ -1,6 +1,6 @@
 # IMAGIN REST API created by Gokul Naidu
 
-### description : This is an API created inspired by various concepts of instagram.
+### description : This is a REST API created for an image sharing platform inspired by various concepts from Instagram.
 
 ### Development hardware and software: Macbook Pro 2015, Python Version = 3.9.1, Coding environment= VS code , Testing application = Postman
 
